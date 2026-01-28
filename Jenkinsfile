@@ -36,10 +36,7 @@ pipeline {
       echo "Pipeline completed successfully"
     }
     failure {
-      echo "Pipeline failed due to security issues"
-    }
-    always {
-      sh 'docker system prune -f'
+      echo "Pipeline failed"
     }
   }
 }
